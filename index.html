@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html ng-app="timerly">
+<head>
+
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+	<title>Timerly</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/css/angular/angular-calendar.css" />
+
+</head>
+<body class="">
+
+
+
+
+		
+
+<div id="header" class="rows clearfix">
+	<div id="logo" class="col-sm-2">TIMERLY</div> <!-- eof logo -->
+	<div id="search" class="col-sm-7">
+
+		<div class="input-group" id="search-input">
+			<label for="searchs" class="input-group-addon"><i class="fa fa-search"></i></label>
+			<input id="searchs" type="text" class="form-control" placeholder="Search users, tasks, projects...">
+		</div>
+
+	</div> <!-- eof search -->
+	<div id="account" class="col-sm-3">
+		<a href="#">Workspace <span class="caret"></span></a> &nbsp; <a href="#"><img src="images/avatar.jpg" class="img-circle" style="width: 30px;max-width: 100%"/></a> 
+	</div> <!-- eof account -->
+</div> <!-- eof header -->
+
+
+
+	<div id="left-sidebar" class="col-sm-2">
+		
+		<p class="">
+			<button class="btn btn-primary btn-block clearfix"><i class="fa fa-play fa-pull-left"></i> START TIMER</button>
+		</p>
+
+		<p>&nbsp;</p>
+
+		<div class="list-pills">
+			<span class="list-pills-title">Main Menu</span>
+			<a href="#timer" class="list-pills-tems"><i class="fa fa-clock-o fa-fw"></i> Timer</a>
+			<a href="#activity" class="list-pills-tems"><i class="fa fa-road fa-fw"></i> Activity</a>
+			<a href="#teams" class="list-pills-tems"><i class="fa fa-users fa-fw"></i> Team</a>
+			<a href="#projects" class="list-pills-tems"><i class="fa fa-download fa-fw	"></i> Projects</a>
+			<a href="#reports" class="list-pills-tems"><i class="fa fa-home fa-fw"></i> Reports</a>
+		</div>
+
+<p>&nbsp;</p>
+		
+		<div class="list-pills">
+			<span class="list-pills-title">Recent Activity</span>
+			
+			<div class="list-pills-tems clearfix"> 
+				<div class="col-xs-2"><img src="images/avatar.jpg" class="img-circle" style="width: 25px;max-width: 100%"/></div> 
+				<div class="col-xs-10">Marvin Ayaay <a href="#">created</a> a new project.</div>
+			</div>
+
+			<div class="list-pills-tems clearfix"> 
+				<div class="col-xs-2"><img src="images/avatar.jpg" class="img-circle" style="width: 25px;max-width: 100%"/></div> 
+				<div class="col-xs-10">Marvin Ayaay <a href="#">commented</a> on the task.</div>
+			</div>
+
+			<div class="list-pills-tems clearfix"> 
+				<div class="col-xs-2"><img src="images/avatar.jpg" class="img-circle" style="width: 25px;max-width: 100%"/></div> 
+				<div class="col-xs-10">Marvin Ayaay <a href="#">logged</a> more hours.</div>
+			</div>
+
+		</div>
+
+	</div> <!-- eof left-sidebar -->
+
+	<div id="main" class="col-sm-7">
+
+		<div ui-view></div>
+
+	</div> <!-- eof main -->
+	<div id="right-sidebar" class="col-sm-3">
+
+<div class="text-center">
+	<date-picker format-date="formatDate" parse-date="parseDate"></date-picker>
+</div>
+
+<p>&nbsp;</p>
+
+<div class="list-pills-title">Progress</div>
+<div class=" text-center">
+<div class="col-xs-1"></div>
+<div class="col-xs-10">
+<div class="" style="position: absolute;top: 70%; bottom: auto;left: 50%; transform: translateY(-50%) translateX(-50%);    color: #bbb;font-size: 18px;font-weight: 100;">{{ '3/5' }}</div>
+<div
+    round-progress
+    max="50"
+    current="23"
+    color="#45ccce"
+    bgcolor="#eaeaea"
+    radius="100"
+    stroke="30"
+    semi="true"
+    rounded="false"
+    clockwise="false"
+    responsive="true"
+    duration="800"
+    animation="easeInOutQuart"></div>	
+</div>
+<div class="col-xs-1"></div>
+</div>
+
+
+
+	</div> <!-- eof right-sidebar -->
+	
+
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-progress.js"></script>
+<script src="assets/js/angular-uirouter.js"></script>
+<script src="assets/js/angular-calendar.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+
+</body>
+</html>

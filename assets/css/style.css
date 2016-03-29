@@ -1,0 +1,261 @@
+html,body{
+	height: 100%;
+}
+
+#header{
+	border-bottom: 1px solid #ccc;
+}
+
+#logo{
+	text-align: center;
+	padding: 0.8em 0;
+	font-size: 16px;	
+	font-weight: bold;
+}
+
+/*search*/
+#search{
+	border-left: 1px solid #ccc;
+	padding: 1em;
+	color: #ccc;
+}
+#search-input label,
+#search-input input{
+	color: #ccc;
+	border: 0;
+	box-shadow: none;
+	background: none;
+}
+#search-input input:focus{
+	color: #000;
+}
+#search-input input::-moz-placeholder{
+	color: #ccc;
+}
+#search-input input::-webkit-input-placeholder{
+	color: #ccc;	
+}
+#search-input input::-ms-input-placeholder{
+	color: #ccc;
+}
+
+
+/*account*/
+#account{
+	padding: 1em;
+	text-align: right;
+}
+
+
+/*main*/
+#main{
+	padding-top: 2rem;
+	min-height: 92.856988766%;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+
+/*Timelogs*/
+#timelogs{
+	position: relative;
+}
+.timeline-group-title{
+	border-radius: 30px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    width: 105px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bbb;
+    margin: 3rem 0 3rem 1rem;
+    z-index: 999;
+    background-color: #fff;
+    overflow: hidden;
+}
+.timeline-log .col-sm-1{
+	margin: 0;
+	padding: 0;
+}
+.timeline-group-title:before{
+    position: absolute;
+    width: 2px;
+    top: 0em;
+    bottom: 0;
+    background: #ccc;
+    left: 62px;
+    z-index: -1;
+    content: " ";
+}
+.timline-time{
+	font-size: 11px;
+	color: #ccc;
+}
+.timeline-caption{
+	padding-left: 30px;
+}
+.timeline-bullets:after{
+    content: " ";
+    border: 3px solid #fff;
+    border-radius: 360px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 57px;
+    width: 11px;
+    height: 11px;
+}
+.timeline-bullets:before{
+    background: yellowgreen;
+    border-radius: 360px;
+	content: " ";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 55px; 
+}
+
+
+
+@media (min-width:768px) and (max-width:968px){
+
+	.timeline-group-title:before{
+		left: 63.8px;
+	}
+	.timeline-bullets:before{
+		left: 42px;
+	}
+	.timeline-bullets:after{
+		left: 44px;
+	}
+}
+.timeline-caption small{
+	display: block;
+	color: #ccc;
+}
+
+
+/*left sidebar*/
+#left-sidebar{
+	padding-top: 2rem;
+}
+
+
+/*right sidebar*/
+#right-sidebar{
+	padding-top: 2rem;
+}
+/*#right-sidebar .angular-date-picker > ._month{
+	display: none;
+}*/
+#right-sidebar .angular-date-picker{
+	border: 0;
+}
+#right-sidebar .angular-date-picker > ._days{
+	width: 100%;
+}
+#right-sidebar .angular-date-picker > ._days > ._day-of-week,
+#right-sidebar .angular-date-picker > ._days > ._day{
+	width: 14%;
+}
+
+/*list pills*/
+.list-pills{
+	margin-bottom: 1rem;
+}
+.list-pills-title{
+	font-size: 10px;
+	font-weight: bold;
+	color: #aaa;
+	margin: 0px 0 15px 0;
+	display: block;
+	text-transform: uppercase; 
+}
+.list-pills-tems{
+	display: block;
+	font-size: 12px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+.list-pills-tems .col-xs-2{
+	padding: 0 4px;
+}
+.list-pills-tems .col-xs-10{
+	margin: 0;
+	padding: 0;
+}
+
+/*page header*/
+.pages-header{
+	margin-bottom: 3rem;
+}
+.pages-title{
+	font-weight: bold;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 7px;
+	color: #aaa;
+}
+
+/*list items*/
+.list-items{
+	padding: 10px 0;
+	border-bottom: 1px solid #ccc;
+	line-height: 94%;
+}
+.list-bullets:before{
+    background: yellowgreen;
+    border-radius: 360px;
+	content: " ";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    /*left: 55px; */
+}
+.list-bullets:after{
+    content: " ";
+    border: 3px solid #fff;
+    border-radius: 360px;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 17px;
+    width: 11px;
+    height: 11px;
+}
+
+.list-text-valign{
+	height: 100%;
+	padding-top: 8px;
+}
+.list-title{
+	font-weight: bold;
+	display: block;
+}
+.list-subtitle{
+	font-size: 10px;
+	color: #bbb;
+	margin: 0;
+}
+
+.bullets-c1:before{
+    background: orange;
+}
+.bullets-c2:before{
+    background: skyblue;
+}
+.bullets-c3:before{
+    background: violet;
+}
+.bullets-c4:before{
+    background: black;
+}
+.bullets-c5:before{
+    background: red;
+}
